@@ -1,4 +1,4 @@
-import Signup from "./pages/sugnup/Signup";
+import { Signup } from "./pages/signup/Signup";
 import Login from "./pages/login/Login";
 import "./App.css";
 
