@@ -37,11 +37,20 @@
   color: rgba(0, 0, 255, 0.656);
   transform: translate(0, 10rem);
 }
-span {
+
+.sign-in:hover {
+  cursor: pointer;
+  color: rgb(108, 108, 167);
+}
+.sign-in {
+  margin-left: 5px;
+  text-decoration: underline;
+}
+/* span {
   transform: translate(11rem, -3.5rem);
   border-radius: 3px;
   padding: 0.8rem;
   cursor: pointer;
   background-color: rgba(0, 0, 255, 0.656);
   color: white;
-}
+} */

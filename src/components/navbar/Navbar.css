@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+.navbar {
+  background-color: #97adca;
+  padding: 0 20px 0 20px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: -0;
+  right: 0;
+  left: 0;
+  margin-bottom: 15px;
+  z-index: 100;
+  color: #44484d;
+}
+
+.navigation a {
+  color: rgb(83, 82, 82) !important;
+}
+
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.nav-menu {
+  margin-top: 80px;
+  background-color: #a5b3c5;
+  width: 250px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: -0;
+  left: -100%;
+  transition: 850ms;
+  color: #44484d;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+  background-color: #b9c5d4;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 95%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.active,
+.nav-text a:hover {
+  background-color: #576f8a;
+  color: #f5f5f5 !important;
+}
+.nav-menu-items1 {
+  display: flex;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color: #2c3775;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #44484d;
+}
+
+span {
+  margin-left: 16px;
+}
+.logo {
+  font-family: "Poppins", sans-serif;
+  color: #d0dde4;
+}
+
+.close-icon {
+  margin-left: 0px !important;
+  margin-top: 0px !important;
+  padding-bottom: 17px !important;
+}
+
+.burger-icon {
+  margin-left: 20px !important;
+}
+
+.name {
+  color: #f5f5f5;
+}
+
+.right-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-div {
+  display: flex;
+}
+img {
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 55px;
+}

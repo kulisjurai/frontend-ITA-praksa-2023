@@ -1,9 +1,16 @@
-.background-signup, .signup-form {
+.background-signup,
+.signup-form {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
+  background-image: linear-gradient(
+    to right bottom,
+    #f25555,
+    lightcoral,
+    #edabba
+  );
 }
 label {
   align-self: start;
@@ -26,10 +33,7 @@ button {
   cursor: pointer;
   background-color: white;
   margin-top: 5px;
-  
 }
 .background-signup {
   border-left: 5px solid white;
 }
-
-
