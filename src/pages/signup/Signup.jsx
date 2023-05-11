@@ -20,7 +20,8 @@ export default function Signup() {
       <div className="background-signup">
         <h1>Sign up</h1>
         <form className="signup-form" onSubmit={handleSubmit}>
-          <label htmlFor="name">First name: </label>
+          <div className="my-div">
+          <label htmlFor="name">First name: </label><br />
           <input
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -29,8 +30,10 @@ export default function Signup() {
             id="name"
             name="name"
           ></input>
+          </div>
 
-          <label htmlFor="lastname">Last name: </label>
+          <div className="my-div">
+          <label htmlFor="lastname">Last name: </label><br />
           <input
             value={lastname}
             onChange={(e) => setLastName(e.target.value)}
@@ -39,8 +42,10 @@ export default function Signup() {
             id="lastname"
             name="lastname"
           />
+          </div>
 
-          <label htmlFor="email">E-mail: </label>
+          <div className="my-div">
+          <label htmlFor="email">E-mail: </label><br />
           <input
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -49,8 +54,10 @@ export default function Signup() {
             id="email"
             name="email"
           />
+          </div>
 
-          <label htmlFor="password">Password: </label>
+          <div className="my-div">
+          <label htmlFor="password">Password: </label><br />
           <input
             value={pass}
             onChange={(e) => setPass(e.target.value)}
@@ -58,7 +65,7 @@ export default function Signup() {
             placeholder="*******"
             id="password"
             name="password"
-          />
+          /></div>
           <br />
           <p>
             Already have an Account!
