@@ -1,63 +1,56 @@
-import React, { useContext, useState } from "react";
-import { GeneralContext } from "../../context/GeneralContext";
+import React, { useState } from "react";
 import "./Login.css";
 
-export default function Login(props) {
-  const { setUser } = useContext(GeneralContext);
-  const displayEventAction = () => {};
-  const [email, setEmail] = useState("");
+export default function Login() {
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [passwordShown, setPasswordShown] = useState(false);
-  const togglePassword = () => {
-    setPasswordShown(!passwordShown);
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email);
-    setUser(email);
-  };
+    console.log(username, password);
+  }
 
-  const switchToSignInForm = () => {
+  const switchToSignUpForm = () => {
     window.location.replace("/signup");
   };
 
   return (
-    <div onClick={displayEventAction} className="backgrounds">
-      <h1 className="naslov">Log in</h1>
-      <form className="logform" onSubmit={handleSubmit}>
-        <label className="lab" htmlFor="email">
-          E-mail:
-        </label>
-        <input
-          className="inp"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          type="email"
-          placeholder="Enter your e-mail"
-        />
+    <>
+    <div className="background-login">
+      <h1>Log in</h1>
+      <form className="login-form" onSubmit={handleSubmit}>
+        <div className="login-div">
+          <label htmlFor="username"></label><br />
+          <input
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            type="text"
+            placeholder="Username"
+            id="username"
+            name="username" />
+        </div>
 
-        <label className="lab" htmlFor="password">
-          Password:
-        </label>
-        <input
-          className="inp"
+        <div className="login-div">
+          <label htmlFor="password"></label><br />
+          <input 
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          type={passwordShown ? "text" : "password"}
-          placeholder="********"
-        />
-        <span onClick={togglePassword}>Show</span>
+          type="password"
+          placeholder="*********"
+          id="password"
+          name="password" />
+        </div>
+        <br />
         <p>
-          Don't Have an Account!
-          <span className="sign-in" onClick={switchToSignInForm}>
-            Sign in
+          Don't have an Account!
+          <span className="log-in" onClick={switchToSignUpForm}>
+            Sign up!
           </span>
         </p>
+
+        <button type="submit">Log in</button>
       </form>
-      <button onClick={handleSubmit} className="butt" type="submit">
-        Login
-      </button>
     </div>
-  );
+    </>
+  )
 }

@@ -1,56 +1,54 @@
-.backgrounds,
-.logform {
+.background-login,
+.login-form {
   height: 100vh;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: white;
-}
-.lab {
-  align-self: left;
-  margin-left: 3.5rem;
-  color: rgba(0, 0, 255, 0.889);
-  font-weight: 400;
-  font-size: 1rem;
-}
-.inp {
-  border: 3px solid rgba(0, 0, 255, 0.656);
-  border-radius: 3px;
-  padding: 1rem;
-  width: 15rem;
-  align-self: center;
-}
-.butt {
-  border: none;
-  padding: 1rem;
-  border-radius: 3px;
-  cursor: pointer;
-  background-color: rgba(0, 0, 255, 0.656);
-  transform: translate(0, -14rem);
-  font-size: 1rem;
   color: white;
-  align-self: center;
-}
-.naslov {
-  color: rgba(0, 0, 255, 0.656);
-  transform: translate(0, 10rem);
+  justify-content: center;
 }
 
-.sign-in:hover {
-  cursor: pointer;
-  color: rgb(108, 108, 167);
-}
-.sign-in {
-  margin-left: 5px;
-  text-decoration: underline;
-}
-/* span {
-  transform: translate(11rem, -3.5rem);
+
+input {
+  border: 3px white;
   border-radius: 3px;
-  padding: 0.8rem;
+  margin-bottom: 5px;
+  padding: 1rem;
+  align-self: center;
+  padding-right: 180px;
+}
+
+button {
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
   cursor: pointer;
-  background-color: rgba(0, 0, 255, 0.656);
-  color: white;
-} */
+  background-color: white;
+  margin-top: 5px;
+}
+
+.background-login {
+  background-image: linear-gradient(
+    to right bottom,
+    #f25555,
+    lightcoral,
+    #edabba
+  );
+}
+
+.login-div {
+  text-align: start;
+  padding-bottom: 3px;
+}
+
+h1 {
+  padding: 1.5rem;
+  
+}
+
+.login-form {
+  justify-content: start;
+  padding-top: 3rem;
+}
+
