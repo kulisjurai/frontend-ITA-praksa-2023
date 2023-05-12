@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Container } from "@mui/material";
 import "./Login.css";
 
 export default function Login() {
@@ -15,12 +16,19 @@ export default function Login() {
   };
 
   return (
-    <>
+    <><div className="background">
+    <Container fixed>
     <div className="background-login">
+      <header className="login-header">
+      <div className="logo-div">
+          <img src="" alt="" />
+          <h2 className="logo">mediaUp</h2>
+        </div>
+      </header>
       <h1>Log in</h1>
       <form className="login-form" onSubmit={handleSubmit}>
         <div className="login-div">
-          <label htmlFor="username"></label><br />
+          <label htmlFor="username">Enter username: </label><br />
           <input
             value={username}
             onChange={(e) => setUsername(e.target.value)}
@@ -31,7 +39,7 @@ export default function Login() {
         </div>
 
         <div className="login-div">
-          <label htmlFor="password"></label><br />
+          <label htmlFor="password">Enter password: </label><br />
           <input 
           value={password}
           onChange={(e) => setPassword(e.target.value)}
@@ -50,6 +58,8 @@ export default function Login() {
 
         <button type="submit">Log in</button>
       </form>
+    </div>
+    </Container>
     </div>
     </>
   )

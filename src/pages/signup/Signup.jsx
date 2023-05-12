@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Container } from "@mui/material";
 import "./Signup.css";
 
 export default function Signup() {
@@ -16,8 +17,15 @@ export default function Signup() {
     window.location.replace("/login");
   };
   return (
-    <>
+    <><div className="background">
+      <Container fixed>
       <div className="background-signup">
+      <header className="signup-header">
+      <div className="logo-div">
+          <img src="" alt="" />
+          <h2 className="logo">mediaUp</h2>
+        </div>
+      </header>
         <h1>Sign up</h1>
         <form className="signup-form" onSubmit={handleSubmit}>
           <div className="my-div">
@@ -76,6 +84,8 @@ export default function Signup() {
 
           <button type="submit">Sign up</button>
         </form>
+      </div>
+      </Container>
       </div>
     </>
   );

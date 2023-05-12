@@ -28,7 +28,10 @@ button {
   margin-top: 5px;
 }
 
-.background-login {
+.background {
+  height: 100vh;
+  width: 100%;
+  display: flex;
   background-image: linear-gradient(
     to right bottom,
     #f25555,
@@ -43,12 +46,37 @@ button {
 }
 
 h1 {
-  padding: 1.5rem;
-  
+  margin-top: 2.5rem;
 }
 
 .login-form {
   justify-content: start;
-  padding-top: 3rem;
+  padding-top: 0rem;
+  
+}
+
+header.login-header {
+  max-height: 8rem;
+  width: 100%;
+  border-bottom: 3px solid white;
+}
+
+.logo-div {
+  padding-top: 0.5rem;
+}
+
+span.log-in:hover {
+  color: purple;
+  cursor: pointer;
+}
+
+@media (max-width: 30rem) {
+  .login-div, h1 {
+    padding-bottom: 1.5rem;
+  }
+  .logo-div {
+    display: flex;
+    justify-content: center;
+  }
 }
 
